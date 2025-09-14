@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  --color-brand: gray-900;       /* change to your brand color */
+  --font-sans: ui-sans-serif, system-ui, "Inter", Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body { font-family: var(--font-sans); }
