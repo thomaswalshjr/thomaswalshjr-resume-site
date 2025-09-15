@@ -23,8 +23,8 @@ const HeroSection = () => (
         Powering Growth Through Data&#8209;Driven Digital Strategies
       </h1>
       <div className="flex flex-col gap-4 sm:flex-row justify-left">
-        <a href="#services" className="rounded bg-[#1dd1a1] px-8 py-3 font-bold text-[#0c1426] transition-colors hover:bg-rose-400 hover:border-rose-400 hover:text-white">My Services</a>
-        <a href="#projects" className="rounded border-2 border-[#1dd1a1] px-8 py-3 font-bold text-white transition-colors hover:bg-rose-400 hover:border-rose-400 hover:text-white">My Projects</a>
+        <a href="#services" className="rounded bg-[#1dd1a1] px-8 py-3 font-bold text-[#0c1426] transition-colors hover:bg-rose-500 hover:border-rose-500 hover:text-white">My Services</a>
+        <a href="#projects" className="rounded border-2 border-[#1dd1a1] px-8 py-3 font-bold text-white transition-colors hover:bg-rose-500 hover:border-rose-500 hover:text-white">My Projects</a>
       </div>
     </div>
   </section>
@@ -38,14 +38,14 @@ const AboutSection = () => (
             <div>
                 <h3 className="font-display text-4xl font-light">Hi, I am <span className="font-bold">Tom Walsh</span></h3>
                 <p className="mb-6 text-lg font-bold text-rose-400">E-COMMERCE & DIGITAL MARKETING LEADER</p>
-                <p className="mb-4 text-gray-900">I collaborate with businesses to craft exceptional websites, design compelling marketing materials, produce corporate and promotional videos, and execute digital marketing campaigns to effectively reach their intended audience.</p>
-                <p className="text-gray-900">My contributions have played a key role in advancing the growth of numerous well-established companies in Dubai.</p>
+                <p className="mb-4 text-gray-900">I&#39;m a marketing leader who has spent the last decade helping businesses modernize their customer connections. My experience spans building e-commerce platforms, leading digital campaigns, and aligning technology with business goals. I enjoy working with small to mid-sized businesses that are ready to grow and seek clear, straightforward guidance to achieve their goals.</p>
+
             </div>
             <div className="rounded-lg bg-gray-900 p-8">
                 <ul className="flex flex-col gap-3 text-gray-200">
                     {[
-                        'Licensed Freelancer', 'Designed 140+ Websites', '100+ Clients Including Government Entities',
-                        'DM Consultant for 7 Companies', "Ranked among Dubai's top 10 in 2021"
+                        '10+ Years of Digital Marketing & E-commerce Experience', 'Led Digital Transformations for Multiple $100MM Businesses', 'Experienced in Data-Driven B2B & DTC Growth',
+                        'Proven SEO & Content Strategist', "Expert in DXP & CMS Platforms"
                     ].map(item => (
                         <li key={item} className="border-b border-[#1dd1a1] pb-3">✓ {item}</li>
                     ))}
