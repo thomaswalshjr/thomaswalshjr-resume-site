@@ -14,6 +14,7 @@ const BADGE_BG = "#ccfbf1"; // teal-100
 const BADGE_TEXT = "#0f766e"; // teal-700
 const BORDER = "rgba(17,24,39,.12)"; // slate-800 @ ~12%
 const TEXT_MUTED = "#475569"; // slate-600
+const COLOR_GOLD = "#b09e6a"; 
 
 /* ---------------------------------------------
    Types & Data
@@ -220,7 +221,7 @@ export default function ProjectsPage() {
       {/* Page header */}
     <header className="w-full py-16" style={{ background: BRAND_WHITE }}>
         <div className="container mx-auto max-w-6xl px-4">
-            <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">Projects</h1>
+            <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">PROJECTS</h1>
             <p className="mt-4 max-w-3xl text-base text-gray-700 sm:text-md">
             Find more information about my professional experience on LinkedIn
             </p>
@@ -229,7 +230,7 @@ export default function ProjectsPage() {
 
       {/* Filters */}
       <div className="container mx-auto max-w-6xl px-4">
-        <div className="-mt-6 flex flex-wrap items-center gap-3 rounded-xl bg-white border-1 border-teal-400 p-4 shadow-sm ring-1 ring-slate-200/60">
+        <div className="-mt-6 flex flex-wrap items-center gap-3 rounded-xl bg-white border-1 border-[#b09e6a] p-4 shadow-sm ring-1 ring-slate-200/60">
           <Chip active={filter === "All"} onClick={() => setFilter("All")}>
             All
           </Chip>

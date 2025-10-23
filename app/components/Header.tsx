@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 export default function Header() {
   const pathname = usePathname();
   const isHome = pathname === "/";
-  const navItems = ["About", "Services"];
+  const navItems = ["About", "Skillset"];
   const [open, setOpen] = useState(false);
 
   // Build hrefs that work on home (hash) and other pages (home + hash)
@@ -26,12 +26,12 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-gray-900 p-6 backdrop-blur-md lg:px-12">
+    <header className="fixed top-0 left-0 z-50 w-full bg-black p-6 backdrop-blur-md lg:px-12">
       <div className="mx-auto flex max-w-6xl items-center justify-between">
         {/* Logo / title */}
         <Link
           href="/"
-          className="text-3xl text-white tracking-wide transition-colors hover:text-teal-300"
+          className="text-3xl text-white tracking-wide transition-colors hover:text-[#b09e6a]"
         >
           <span className="font-extrabold">TOM WALSH</span>
         </Link>
@@ -43,7 +43,7 @@ export default function Header() {
               <li key={item}>
                 <Link
                   href={sectionHref(item.toLowerCase())}
-                  className="text-sm font-semibold uppercase tracking-wider text-zinc-300 transition-colors hover:text-teal-300"
+                  className="text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:text-[#b09e6a]"
                 >
                   {item}
                 </Link>
@@ -52,7 +52,7 @@ export default function Header() {
             <li>
               <Link
                 href="/projects"
-                className="text-sm font-semibold uppercase tracking-wider text-zinc-300 transition-colors hover:text-teal-300"
+                className="text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:text-[#b09e6a]"
               >
                 Projects
               </Link>
@@ -63,7 +63,7 @@ export default function Header() {
         {/* Desktop CTA */}
         <Link
           href={sectionHref("contact")}
-          className="hidden rounded border-2 border-teal-300 px-5 py-2 text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-teal-300 hover:border-teal-300 hover:text-gray-900 sm:inline-block md:inline-block"
+          className="hidden rounded border-2 border-[#b09e6a] px-5 py-2 text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-[#b09e6a] hover:border-[#b09e6a] hover:text-black sm:inline-block md:inline-block"
         >
           Contact Me
         </Link>
