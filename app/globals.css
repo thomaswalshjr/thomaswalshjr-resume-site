@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: gray-900;       /* change to your brand color */
+  --color-brand: zinc-950;       /* change to your brand color */
   --font-sans: ui-sans-serif, system-ui, "Inter", Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 

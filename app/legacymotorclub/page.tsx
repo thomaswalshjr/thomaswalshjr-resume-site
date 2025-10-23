@@ -304,18 +304,18 @@ export default function NewPage() {
         </div>
         {/* Optional CTA row */}
         <div className="mt-12 flex items-center justify-center gap-4">
-          <a
+          <Link
             href="/projects"
             className="rounded border-2 border-[#b09e6a] bg-[#b09e6a] px-6 py-2 font-semibold text-black transition-colors hover:bg-black hover:border-black hover:text-[#b09e6a]"
           >
             View Projects
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#contact"
             className="rounded border-2 border-[#b09e6a] bg-[#b09e6a] px-6 py-2 font-semibold text-black transition-colors hover:bg-black hover:border-black hover:text-[#b09e6a]"
           >
             Contact Me
-          </a>
+          </Link>
         </div>
       </section>
     </>
