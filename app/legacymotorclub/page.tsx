@@ -16,7 +16,7 @@ export default function NewPage() {
             DRIVING DIGITAL INNOVATION FOR LEGACY MOTOR CLUB
           </h1>
           <p className="mt-8 max-w-6xl text-zinc-700">
-            I bring a builder's mindset and a fan's passion to digital platforms, combining hands-on experience 
+            I bring a builder&#39;s mindset and a fan&#39;s passion to digital platforms, combining hands-on experience 
             in website and app development with a deep understanding of what drives engagement, loyalty, and sponsor 
             value in modern motorsports. My goal is to help Legacy Motor Club create digital experiences that are 
             fast, connected, and unforgettable for fans and sponsors alike.
@@ -41,7 +41,7 @@ export default function NewPage() {
                 href="#section-two"
                 className="block rounded border-0 px-6 py-3 text-center text-sm font-semibold uppercase tracking-wider bg-black text-[#b09e6a] transition-colors hover:bg-[#b09e6a] hover:text-black"
               >
-                What I've Done
+                What I&#39;ve Done
               </Link>
             </li>
             <li>
@@ -68,7 +68,7 @@ export default function NewPage() {
             <div className="rounded-lg bg-black p-8 text-center transition-transform hover:-translate-y-2">
               <h3 className="mb-3 text-xl font-bold text-white">Proven Track Record</h3>
               <p className="text-left text-zinc-300">
-                I've spearheaded projects that have exponentially grown app users and website traffic.
+                I&#39;ve spearheaded projects that have exponentially grown app users and website traffic.
               </p>
             </div>
 
@@ -76,7 +76,7 @@ export default function NewPage() {
             <div className="rounded-lg bg-black p-8 text-center transition-transform hover:-translate-y-2">
               <h3 className="mb-3 text-xl font-bold text-white">Digital Experience</h3>
               <p className="text-left text-zinc-300">
-                I've led the day-to-day operation and maintenance of websites for multiple large manufacturers.
+                I&#39;ve led the day-to-day operation and maintenance of websites for multiple large manufacturers.
               </p>
             </div>
 
@@ -90,9 +90,9 @@ export default function NewPage() {
 
             {/* Card 4 */}
             <div className="rounded-lg bg-black p-8 text-center transition-transform hover:-translate-y-2">
-              <h3 className="mb-3 text-xl font-bold text-white">Fan's Perspective</h3>
+              <h3 className="mb-3 text-xl font-bold text-white">Fan&#39;s Perspective</h3>
               <p className="text-left text-zinc-300">
-                I've been a NASCAR fan for 20+ years and know how to reach and engage with other fans.
+                I&#39;ve been a NASCAR fan for 20+ years and know how to reach and engage with other fans.
               </p>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function NewPage() {
       <section id="section-two" className="w-full bg-white py-12 scroll-mt-15">
         <div className="container mx-auto max-w-6xl px-4">
           <h2 className="text-center text-2xl font-bold uppercase tracking-widest text-black sm:text-3xl">
-            What I've Done
+            What I&#39;ve Done
           </h2>
           <div className="grid grid-cols-1 gap-24 lg:grid-cols-2 py-6">
             <div>
@@ -112,7 +112,7 @@ export default function NewPage() {
                 engagement, and digital platform development for fast-moving brands.
               </p>
               <p className="mt-4 text-zinc-700">
-                I've successfully led cross-functional collaboration, QA testing, and vendor management to deliver 
+                I&#39;ve successfully led cross-functional collaboration, QA testing, and vendor management to deliver 
                 seamless, data-informed fan and customer experiences.
               </p>
               <p className="mt-4 text-zinc-700">
@@ -153,7 +153,7 @@ export default function NewPage() {
               <p className="text-xl font-bold text-zinc-900">Website Management</p>
               <p className="mt-2 text-zinc-700">
                 At Ingersoll Rand and Solve Industrial Motion Group, I oversaw the development and day-to-day performance 
-                of the company's digital platforms, ensuring the website remained fast, organized, and seamlessly 
+                of the company&#39;s digital platforms, ensuring the website remained fast, organized, and seamlessly 
                 integrated with the tools that powered marketing and customer engagement.
               </p>
               <ul className="mt-6 px-9 space-y-3 text-zinc-700">
@@ -258,7 +258,7 @@ export default function NewPage() {
               <p className="text-left text-zinc-900">
                 Transform the Legacy Motor Club website into a dynamic, data-driven digital hub that personalizes 
                 content and uses interactive storytelling to both engage fans and better showcase and educate them 
-                about the team's sponsors.
+                about the team&#39;s sponsors.
               </p>
             </div>
 
@@ -266,7 +266,7 @@ export default function NewPage() {
             <div className="rounded-lg bg-[#b09e6a] p-8 text-center transition-transform hover:-translate-y-2">
               <h3 className="mb-3 text-xl font-bold text-black">Better Integrate Digital Touchpoints</h3>
               <p className="text-left text-zinc-900">
-                Improve integration among the team’s website, e-commerce store, and social media channels to create 
+                Improve integration among the team&#39;s website, e-commerce store, and social media channels to create 
                 a seamless fan journey where content, community engagement, and merchandise come together in a single, 
                 connected experience.
               </p>
@@ -276,7 +276,7 @@ export default function NewPage() {
             <div className="rounded-lg bg-[#b09e6a] p-8 text-center transition-transform hover:-translate-y-2">
               <h3 className="mb-3 text-xl font-bold text-black">Foster a Seamless Digital Experience</h3>
               <p className="text-left text-zinc-900">
-                Create a digital fan rewards program that connects the team's website, e-commerce store, and social 
+                Create a digital fan rewards program that connects the team&#39;s website, e-commerce store, and social 
                 media channels to incentivize engagement, rewarding fans for actions like following, sharing, and 
                 purchasing to build loyalty and deepen their connection to the team.
               </p>
