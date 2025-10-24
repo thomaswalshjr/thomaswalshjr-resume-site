@@ -114,7 +114,7 @@ export default function Header() {
         {/* Slide-down panel under header */}
         <div
           id="mobile-menu"
-          className={`fixed left-0 right-0 z-50 top-[72px] origin-top transform bg-gray-900/95 px-6 pb-6 pt-4 backdrop-blur transition-all ${
+          className={`fixed left-0 right-0 z-50 top-[72px] origin-top transform bg-black/95 px-6 pb-6 pt-4 backdrop-blur transition-all ${
             open ? "scale-y-100 opacity-100" : "scale-y-95 opacity-0"
           }`}
         >
@@ -148,7 +148,7 @@ export default function Header() {
             <Link
               href={sectionHref("contact")}
               onClick={() => setOpen(false)}
-              className="block w-full rounded border-2 border-teal-300 px-4 py-2 text-center text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-teal-300 hover:border-teal-300 hover:text-gray-900"
+              className="block w-full rounded border-2 border-[#b09e6a] px-4 py-2 text-center text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-[#b09e6a] hover:border-[#b09e6a] hover:text-black"
             >
               Contact Me
             </Link>
