@@ -30,30 +30,58 @@ const HeroSection = () => (
   </section>
 );
 
-// About Section Component
+// About Section Component (updated)
 const AboutSection = () => (
-    <section id="about" className="w-full bg-white py-24 scroll-mt-24">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-            <div>
-                <h3 className="font-display text-4xl font-light">Hi, I am <span className="font-bold">Tom Walsh</span></h3>
-                <p className="mb-6 text-lg font-bold text-[#b09e6a]">E-COMMERCE & DIGITAL MARKETING LEADER</p>
-                <p className="mb-4 text-gray-900">I&#39;m a marketing leader who has spent the last decade helping businesses modernize their customer connections. My experience spans building e-commerce platforms, leading digital campaigns, and aligning technology with business goals. I enjoy working with small to mid-sized businesses that are ready to grow and seek clear, straightforward guidance to achieve their goals.</p>
+  <section id="about" className="w-full bg-white py-24 scroll-mt-24">
+    <div className="container mx-auto px-4">
+      <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        {/* LEFT: photo + intro text */}
+        <div>
+          {/* Profile image */}
+          <div className="mx-auto mb-6 w-1/2 sm:mb-8">
+            <Image
+              src="/tom-walsh.jpg"
+              alt="Tom Walsh headshot"
+              width={800}
+              height={800}
+              priority
+              className="aspect-square w-full rounded-full border-4 border-[#b09e6a] object-cover shadow-md"
+            />
+          </div>
 
-            </div>
-            <div className="rounded-lg bg-black p-8">
-                <ul className="flex flex-col gap-3 text-gray-200">
-                    {[
-                        '10+ Years of Digital Marketing & E-commerce Experience', 'Led Digital Transformations for Multiple $100MM Businesses', 'Experienced in Data-Driven B2B & DTC Growth',
-                        'Proven SEO & Content Strategist', "Expert in DXP & CMS Platforms"
-                    ].map(item => (
-                        <li key={item} className="border-b border-[#b09e6a] pb-3">✓ {item}</li>
-                    ))}
-                </ul>
-            </div>
+          <h3 className="font-display text-4xl text-center font-light">
+            Hi, I am <span className="font-bold">Tom Walsh</span>
+          </h3>
+          <p className="mb-6 text-lg font-bold text-center text-[#b09e6a]">
+            E-COMMERCE & DIGITAL MARKETING LEADER
+          </p>
+          <p className="mb-4 text-gray-900">
+            I&apos;m a marketing leader who has spent the last decade helping businesses modernize their customer
+            connections. My experience spans building e-commerce platforms, leading digital campaigns, and aligning
+            technology with business goals. I enjoy working with small to mid-sized businesses that are ready to grow and
+            seek clear, straightforward guidance to achieve their goals.
+          </p>
+        </div>
+
+        {/* RIGHT: bullets panel*/}
+        <div className="rounded-lg bg-black p-8">
+          <ul className="flex flex-col gap-4 text-xl text-gray-200">
+            {[
+              "10+ Years of Digital Marketing & E-commerce Experience",
+              "Led Digital Transformations for Multiple $100MM Businesses",
+              "Experienced in Data-Driven B2B & DTC Growth",
+              "Proven SEO & Content Strategist",
+              "Expert in DXP & CMS Platforms",
+            ].map((item) => (
+              <li key={item} className="border-b border-[#b09e6a] pb-4">
+                ✓ {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 );
 
 // Skillset Section Component
