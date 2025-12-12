@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thomaswalshjr.com/sitemap.xml
+
+# Disallow private/admin areas (examples)
+User-agent: *
+Disallow: /admin
+Disallow: /api/private
