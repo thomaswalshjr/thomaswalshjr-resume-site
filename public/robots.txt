@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 
+# Host: https://www.thomaswalshjr.com
 Sitemap: https://thomaswalshjr.com/sitemap.xml
 
 User-agent: *
