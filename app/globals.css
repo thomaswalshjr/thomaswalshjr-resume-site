@@ -1,12 +1,32 @@
 @import "tailwindcss";
 
-@theme {
-  --color-brand: zinc-950;       /* change to your brand color */
-  --font-sans: ui-sans-serif, system-ui, "Inter", Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+:root {
+  --primary: #34d499; /* emerald-400 */
+  --primary-dark: #166534; /* emerald-800 */
+  
+  /* Backgrounds */
+  --background: #e4e4e7; /* zinc-200 */
+  --surface: #fafafa;    /* zinc-50 */
+  
+  /* Text */
+  --foreground: #09090b; /* zinc-950 */
+  --muted: #27272a;      /* zinc-800 */
 }
 
-html {
-  scroll-behavior: smooth;
+@layer base {
+  html {
+    font-family: var(--font-inter), sans-serif;
+    
+    background-color: var(--background);
+    color: var(--foreground);
+    
+    scroll-behavior: smooth;
+  }
+
+  .font-headline {
+    font-family: var(--font-montserrat), sans-serif;
+    font-weight: 700;
+  }
 }
 
 body { font-family: var(--font-sans); }

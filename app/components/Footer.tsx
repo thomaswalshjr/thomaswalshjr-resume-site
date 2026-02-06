@@ -1,15 +1,17 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
-        <footer className="bg-black py-10 text-center text-white">
+        <footer className="bg-blue-950 py-10 text-center text-slate-100  border-t-2 border-blue-500">
             <div className="container mx-auto px-4">
                 <div className="mb-4 flex flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
-                    <a href="mailto:thomaswalshjr@gmail.com" className="transition-colors hover:text-rose-500">thomaswalshjr@gmail.com</a>
+                    <Link href="/#contact" className="font-bold transition-colors hover:text-sky-400">
+                        Contact Me
+                    </Link>
                     <span className="hidden md:block">|</span>
-                    <span>Charlotte, NC</span>
-                    <span className="hidden md:block">|</span>
-                    <a href="/legacymotorclub" className="text-[#b09e6a]">Legacy Motor Club</a>
+                    <span>Based in Charlotte, NC</span>
                 </div>
-                <p className="text-sm text-neutral-500">
+                <p className="text-sm text-blue-300">
                     © {new Date().getFullYear()} Tom Walsh. All Rights Reserved.
                 </p>
             </div>

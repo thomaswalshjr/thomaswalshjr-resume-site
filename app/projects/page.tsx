@@ -1,24 +1,16 @@
-// app/projects/page.tsx
 "use client";
-
 import { useMemo, useState } from "react";
 import Image from "next/image";
 
-
-/* ---------------------------------------------
-   Local design tokens (aligns with your site)
-----------------------------------------------*/
-const BRAND_WHITE = "#ffffff";
-const BRAND_PRIMARY = "#111827"; // button blue (Tailwind blue-700)
-const BADGE_BG = "#ccfbf1"; // teal-100
-const BADGE_TEXT = "#0f766e"; // teal-700
+const BRAND_WHITE = "slate-100";
+const BRAND_PRIMARY = "blue-700";
+const BADGE_BG = "green-400"; // teal-100
+const BADGE_TEXT = "green-900"; // teal-700
 const BORDER = "rgba(17,24,39,.12)"; // slate-800 @ ~12%
 const TEXT_MUTED = "#475569"; // slate-600
 const COLOR_GOLD = "#b09e6a"; 
 
-/* ---------------------------------------------
-   Types & Data
-----------------------------------------------*/
+/* Types & Data */
 type Category = "E-Commerce" | "Customer Journey" | "Data Initiatives";
 
 type Project = {
@@ -88,7 +80,7 @@ const PROJECTS: Project[] = [
     title: "Crafted the Onboarding Journey to Scale a Consumer Mobile App",
     industry: "SaaS Technology",
     alt:
-      "Developed educational materials and campaigns to highlight the app’s convenience and value, partnering with creative teams to produce signage, digital assets, and promotional offers. Crafted how-to resources that made adoption effortless for new users.",
+      "Developed educational materials and campaigns to highlight the app's convenience and value, partnering with creative teams to produce signage, digital assets, and promotional offers. Crafted how-to resources that made adoption effortless for new users.",
     result: "Helped drive app growth from ~80,000 to over 1 million users during tenure.",
     stack: ["Storytelling", "Adoption & Engagement", "Cross-Functional Collaboration"],
     image: "/projects/seo-analytics.png",
@@ -96,9 +88,6 @@ const PROJECTS: Project[] = [
   },
 ];
 
-/* ---------------------------------------------
-   Small UI helpers
-----------------------------------------------*/
 function Chip({
   active,
   children,
@@ -114,8 +103,8 @@ function Chip({
       className={[
         "rounded-full border px-4 py-2 text-sm font-medium transition-colors",
         active
-          ? "border-slate-300 bg-white text-slate-900 shadow-sm"
-          : "border-slate-200 bg-slate-50 text-slate-700 hover:bg-white",
+          ? "border-slate-300 bg-blue-900 text-white shadow-sm  hover:bg-blue-700 hover:text-white"
+          : "border-slate-300 bg-blue-500 text-white hover:bg-blue-700 hover:text-white",
       ].join(" ")}
       type="button"
     >
@@ -126,15 +115,13 @@ function Chip({
 
 function MetaPill({ children }: { children: React.ReactNode }) {
   return (
-    <span className="rounded-md bg-slate-100 px-3 py-1 text-sm text-slate-700">
+    <span className="rounded-md bg-slate-200 px-3 py-1 text-xs text-blue-950">
       {children}
     </span>
   );
 }
 
-/* ---------------------------------------------
-   Card Component
-----------------------------------------------*/
+/* Card Component */
 function ProjectCard({
   project,
 }: {
@@ -142,8 +129,7 @@ function ProjectCard({
 }) {
   return (
     <div
-      className="rounded-xl bg-white p-5 sm:p-6"
-      style={{ border: `1px solid ${BORDER}` }}
+      className="rounded-xl bg-white p-5 sm:p-6 border-1 border-slate-300 shadow-sm ring-1 ring-slate-300/30"
     >
       <div className="grid grid-cols-[112px_1fr] gap-5 sm:gap-6">
         {/* Image / placeholder */}
@@ -170,27 +156,26 @@ function ProjectCard({
 
         {/* Content */}
         <div>
-          <h3 className="text-xl font-semibold text-slate-900 sm:text-2xl">
+          <h3 className="text-xl font-semibold text-blue-600 sm:text-2xl">
             {project.title}
           </h3>
 
-          <p className="mt-2 text-sm leading-relaxed" style={{ color: BRAND_PRIMARY }}>
+          <p className="mt-2 text-sm leading-relaxed text-blue-950 bg-white">
             {project.industry}
           </p>
 
-          <p className="mt-2 text-sm leading-relaxed" style={{ color: TEXT_MUTED }}>
+          <p className="mt-2 text-sm leading-relaxed text-slate-600">
             {project.alt}
           </p>
 
           {/* Result badge */}
           <div className="mt-3 flex items-center gap-2">
             <span
-              className="rounded-full px-2.5 py-1 text-xs font-semibold"
-              style={{ background: BADGE_BG, color: BADGE_TEXT }}
+              className="rounded-full px-2.5 py-1 text-sm font-semibold bg-teal-100 text-emerald-800"
             >
               Result:
             </span>
-            <span className="text-sm text-slate-800">{project.result}</span>
+            <span className="text-sm font-medium text-blue-950">{project.result}</span>
           </div>
 
           {/* Meta row */}
@@ -205,9 +190,7 @@ function ProjectCard({
   );
 }
 
-/* ---------------------------------------------
-   Page
-----------------------------------------------*/
+/* Page */
 export default function ProjectsPage() {
   const [filter, setFilter] = useState<"All" | Category>("All");
 
@@ -217,20 +200,28 @@ export default function ProjectsPage() {
   }, [filter]);
 
   return (
-    <div className="min-h-screen bg-slate-50 my-16">
+    <div className="min-h-screen bg-slate-100 my-16">
       {/* Page header */}
-    <header className="w-full py-16" style={{ background: BRAND_WHITE }}>
+    <header className="w-full py-16 bg-slate-100">
         <div className="container mx-auto max-w-6xl px-4">
-            <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">PROJECTS</h1>
+            <h1 className="text-left text-blue-950 font-display text-3xl font-bold uppercase tracking-widest md:text-4xl">Work I've Done</h1>
             <p className="mt-4 max-w-3xl text-base text-gray-700 sm:text-md">
-            Find more information about my professional experience on LinkedIn
+              Find more information about my professional experience by visiting my{" "}
+              <a 
+                href="https://www.linkedin.com/in/thomaswalshjr/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-blue-600 font-bold underline hover:text-blue-900 transition-colors"
+              >
+                LinkedIn profile
+              </a>.
             </p>
         </div>
     </header>
 
       {/* Filters */}
       <div className="container mx-auto max-w-6xl px-4">
-        <div className="-mt-6 flex flex-wrap items-center gap-3 rounded-xl bg-white border-1 border-[#b09e6a] p-4 shadow-sm ring-1 ring-slate-200/60">
+        <div className="-mt-6 flex flex-wrap items-center gap-3 rounded-xl bg-white border-1 border-sky-400 p-4 shadow-sm ring-1 ring-sky-200/60">
           <Chip active={filter === "All"} onClick={() => setFilter("All")}>
             All
           </Chip>
