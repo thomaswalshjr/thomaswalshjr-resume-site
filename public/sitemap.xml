@@ -3,36 +3,17 @@
   <!-- Homepage -->
   <url>
     <loc>https://thomaswalshjr.com/</loc>
-    <lastmod>2025-12-12</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Static pages -->
   <url>
     <loc>https://thomaswalshjr.com/projects</loc>
-    <lastmod>2025-12-12</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://thomaswalshjr.com/about</loc>
-    <lastmod>2025-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
 
-  <!-- Project detail pages -->
-  <url>
-    <loc>https://thomaswalshjr.com/projects/checkout-optimization</loc>
-    <lastmod>2025-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thomaswalshjr.com/projects/saas-analytics-redesign</loc>
-    <lastmod>2025-12-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
 </urlset>
